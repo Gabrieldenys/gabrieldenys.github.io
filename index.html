@@ -1,50 +1,333 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Eventually by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Eventually</h1>
-				<p>There will be a site here, telling people about my projects<br />
-				I can notify you when it's ready</p>
-			</header>
+<head>
 
-		<!-- Signup Form -->
-			<form id="signup-form" method="POST" action="subscribe.php">
-				<input type="Email" name="Email" id="Email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+    <title>Bridge Engineering</title>
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-	</body>
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Intro</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >About us</a>
+            </li>
+            <li>
+                <a href="#callout" onclick = $("#menu-close").click(); >Clients</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Our work</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact us</a>
+            </li>
+			  <li class="divider"></li>
+			<li>
+                <a href="profile.html" onclick = $("#menu-close").click(); >Company profile</a>
+            </li>
+			<li>
+                <a href="contacts.html" onclick = $("#menu-close").click(); >More contact details</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <img src="img/logo.png" alt="logo" />
+            <h3>Quality Welding and steel specialists</h3>
+            <br>
+            <a href="#services" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+   
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>What we do</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                               <img src="img/wwd1.jpg" class="img-circle" width="50%" height="50%" />
+                                <h4>
+                                    <strong>Architectural Steel</strong>
+                                </h4>
+                                <p>Our architectural steel has been used in many buildings accross the country.</p>
+                      
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <img src="img/wwd3.jpg" class="img-circle" width="50%" height="50%" />
+                                <h4>
+                                    <strong>Secondary Steel</strong>
+                                </h4>
+                                <p>We have made countless secondary steelwork projects that are used all over Ireland.</p>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                 <img src="img/wwd2.jpg" class="img-circle" width="50%" height="50%" />
+                                <h4>
+                                    <strong>Structural Steel</strong>
+                                </h4>
+                                <p>Structural steel produced by us are the bones of many projects. It is strong and reliable.</p>
+                              
+                            </div>
+                        </div>
+                     
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+ <!-- About -->
+    <section id="about" class="about">
+	
+	
+	
+	<div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h1 style="color: #000;">We have the qualifications that you want</h1>
+                  
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                          <img src="img/iso.png" alt="logo" height="40%" width="40%" style="position: centered; text-align: center;" />
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                         <img src="img/asme.png" alt="logo" height="60%" width="60%" style="position: centered; text-align: center;"/>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <img src="img/bs.png" alt="logo" height="50%" width="50%" style="position: centered; text-align: center;"/>
+                        </div>
+                     
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+	
+    </section>
+
+    <!-- Callout -->
+    <aside id="callout" class="callout">
+        <div class="text-vertical-center">
+            <h1>We have worked on some pretty big projects</h1>
+        </div>
+    </aside>
+<!-- clients -->
+    <section id="clients" class="clients">
+        <aside class="call-to-action bg-primary">
+		
+		<div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                 
+                  
+                    <div class="row">
+                        <div class="col-md-3 col-sm-2">
+                          <img src="img/esb.png" alt="" height="35%" width="35%" style="position: centered; text-align: center;" />
+                        </div>
+                        <div class="col-md-3 col-sm-2">
+                         <img src="img/heg.png" alt="" height="30%" width="30%"style="position: centered; text-align: center;"/>
+                        </div>
+                        <div class="col-md-3 col-sm-2">
+                          <img src="img/vist.png" alt="" height="70%" width="70%" style="position: centered; text-align: center;" />
+                        </div>
+						 <div class="col-md-3 col-sm-2">
+                          <img src="img/sisk.png" alt="" height="40%" width="40%" style="position: centered; text-align: center;"/>
+                        </div>
+                     
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+		</div>
+		
+		
+		
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2 style="color: #000;">Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                               
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                             
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                             
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                               
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                             
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+               
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Have we got your attention now?</h3>
+                    <a href="#contact" class="btn btn-lg btn-light">Contact us</a>
+                    <a href="profile.html" class="btn btn-lg btn-dark">Company profile</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+	
+
+
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9666.239204151829!2d-8.4798966!3d52.7220901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a12835f249edf9d!2sBridge+Engineering+Limited!5e0!3m2!1sen!2sie!4v1465936838835"></iframe>
+        <br />
+        <small>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9666.239204151829!2d-8.4798966!3d52.7220901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a12835f249edf9d!2sBridge+Engineering+Limited!5e0!3m2!1sen!2sie!4v1465936838835"></a>
+        </small>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4 style="color: #000;"><strong>Bridge Engineering</strong>
+                    </h4>
+                    <p style="color: #000;">Gooig<br>Castleconnel, Co.Limerick</p>
+                    <ul class="list-unstyled">
+                        <li style="color: #000;"><i style="color: #000;" class="fa fa-phone fa-fw"></i> 085 123456</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:drawings@bridgeeng.ie">drawings@bridgeeng.ie</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                       
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Bridge Engineering 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
 </html>
