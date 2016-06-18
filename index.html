@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>Bridge Engineering</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -60,7 +61,7 @@
                 <a href="profile.html" onclick = $("#menu-close").click(); >Company profile</a>
             </li>
 			<li>
-                <a href="contacts.html" onclick = $("#menu-close").click(); >More contact details</a>
+                <a href="contact.html" onclick = $("#menu-close").click(); >More contact details</a>
             </li>
         </ul>
     </nav>
@@ -85,7 +86,7 @@
                     <h2>What we do</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-4">
                             <div class="service-item">
                                <img src="img/wwd1.jpg" class="img-circle" width="50%" height="50%" />
                                 <h4>
@@ -95,7 +96,7 @@
                       
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-4">
                             <div class="service-item">
                                 <img src="img/wwd3.jpg" class="img-circle" width="50%" height="50%" />
                                 <h4>
@@ -105,7 +106,7 @@
                             
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-4">
                             <div class="service-item">
                                  <img src="img/wwd2.jpg" class="img-circle" width="50%" height="50%" />
                                 <h4>
@@ -134,13 +135,13 @@
                     <h1 style="color: #000;">We have the qualifications that you want</h1>
                   
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-4">
                           <img src="img/iso.png" alt="logo" height="40%" width="40%" style="position: centered; text-align: center;" />
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-4">
                          <img src="img/asme.png" alt="logo" height="60%" width="60%" style="position: centered; text-align: center;"/>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-4">
                           <img src="img/bs.png" alt="logo" height="50%" width="50%" style="position: centered; text-align: center;"/>
                         </div>
                      
@@ -157,6 +158,95 @@
             <h1>We have worked on some pretty big projects</h1>
         </div>
     </aside>
+	
+	<!-- testimonials -->
+	<section id ="testimonials" >
+	<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+    <h2 style="color: #000;">People love us!</h2>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote style="color: #000;">
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/SULiik/128.jpg" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9">
+                  <p style="color: #000;">It's so easy working with Bridge Engineering. They complete every project on time. Whenever we have a project the choice is obvious, Bridge Engineering!</p>
+                  <small>Vistakon</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote style="color: #000;">
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/alxndrustinov/128.jpg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p style="color: #000;">Bridge engineering always delivers projects on time, no matter how big the project.</p>
+                  <small>Sisk</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote style="color: #000;">
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p style="color: #000;">I am still amazed with the quick delivery time and the steelwork quality.</p>
+                  <small>ESB</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+
+      </div>                          
+    </div>
+  </div>
+   <div class='col-md-offset-2 col-md-8 text-center'>
+<h2 style="color: #000;">And we hope you will too.</h2>
+</div>
+	<div class="col-xs-12" style="height:40px;"></div>
+</div>
+ 
+		</section>
+		
+		<script>
+		$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 5500,
+  });
+});
+		</script>
+	
 <!-- clients -->
     <section id="clients" class="clients">
         <aside class="call-to-action bg-primary">
@@ -166,16 +256,16 @@
                  
                   
                     <div class="row">
-                        <div class="col-md-3 col-sm-2">
+                        <div class="col-md-3 col-sm-3">
                           <img src="img/esb.png" alt="" height="35%" width="35%" style="position: centered; text-align: center;" />
                         </div>
-                        <div class="col-md-3 col-sm-2">
+                        <div class="col-md-3 col-sm-3">
                          <img src="img/heg.png" alt="" height="30%" width="30%"style="position: centered; text-align: center;"/>
                         </div>
-                        <div class="col-md-3 col-sm-2">
+                        <div class="col-md-3 col-sm-3">
                           <img src="img/vist.png" alt="" height="70%" width="70%" style="position: centered; text-align: center;" />
                         </div>
-						 <div class="col-md-3 col-sm-2">
+						 <div class="col-md-3 col-sm-3">
                           <img src="img/sisk.png" alt="" height="40%" width="40%" style="position: centered; text-align: center;"/>
                         </div>
                      
