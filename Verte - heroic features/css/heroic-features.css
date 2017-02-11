@@ -1,0 +1,21 @@
+/*
+ * Verte - Heroic Features (http://oursiteverte.com/)
+ * Copyright Verte 2017
+ * 
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
